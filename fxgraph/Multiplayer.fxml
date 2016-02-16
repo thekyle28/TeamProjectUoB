@@ -80,7 +80,7 @@
             </Pane>
          </children>
       </VBox>
-      <Pane layoutX="14.0" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="159.0" stylesheets="@../multiplayer.css">
+      <Pane fx:id="backBtn" layoutX="14.0" layoutY="42.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="159.0" stylesheets="@../multiplayer.css">
          <styleClass>
             <String fx:value="back-btn" />
             <String fx:value="btn" />
@@ -99,7 +99,7 @@
       </Label>
       <ComboBox fx:id="mapHeight" layoutX="467.0" layoutY="246.0" prefWidth="150.0" promptText="Map Height" />
       <ComboBox fx:id="mapWidth" layoutX="635.0" layoutY="246.0" prefWidth="150.0" promptText="Map Width" />
-      <Pane layoutX="347.0" layoutY="485.0" prefHeight="64.0" prefWidth="179.0" stylesheets="@../multiplayer.css">
+      <Pane fx:id="okPane" layoutX="347.0" layoutY="485.0" prefHeight="64.0" prefWidth="179.0" stylesheets="@../multiplayer.css">
          <styleClass>
             <String fx:value="ok-btn" />
             <String fx:value="btn" />
@@ -116,9 +116,9 @@
             <Font name="Comic Sans MS Bold" size="30.0" fx:id="x211" />
          </font>
       </Label>
-      <Pane fx:id="treasureSelectRBtn" layoutX="515.0" layoutY="348.0">
+      <Pane fx:id="treasureSelectPane" layoutX="515.0" layoutY="348.0">
          <children>
-            <RadioButton id="breadthFirstSearch" fx:id="selectLocation" mnemonicParsing="false" selected="true" text="Select location" textFill="WHITE">
+            <RadioButton id="breadthFirstSearch" fx:id="treasureSelectRBtn" mnemonicParsing="false" selected="true" text="Select location" textFill="WHITE">
                <font>
                   <Font size="29.0" />
                </font>
@@ -134,9 +134,9 @@
             </Pane>
          </children>
       </Pane>
-      <Pane fx:id="treasureRandomRBtn" layoutX="515.0" layoutY="404.0">
+      <Pane fx:id="treasureRandomPane" layoutX="515.0" layoutY="404.0">
          <children>
-            <RadioButton id="depthFirstSearch" fx:id="randomise" layoutX="8.0" layoutY="4.0" mnemonicParsing="false" selected="false" text="Randomise" textFill="WHITE">
+            <RadioButton id="depthFirstSearch" fx:id="treasureRandomRBtn" layoutX="8.0" layoutY="4.0" mnemonicParsing="false" selected="false" text="Randomise" textFill="WHITE">
                <font>
                   <Font size="29.0" />
                </font>

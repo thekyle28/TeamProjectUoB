@@ -18,8 +18,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 
 public class MultiplayerController extends CustomController implements Initializable{
-	@FXML private Pane backBtn, okBtn;
-	@FXML private RadioButton easyRBtn, mediumRBtn, hardRBtn, treasureSelectRBtn, treasureRandomRBtn;
+	@FXML private Pane backPane, okPane, treasureRandomPane, treasureSelectPane;
+	@FXML private RadioButton Easy, Medium, Hard, treasureSelectRBtn, treasureRandomRBtn;
 	@FXML private ComboBox mapHeight, mapWidth;
 	
 	@FXML
@@ -33,12 +33,6 @@ public class MultiplayerController extends CustomController implements Initializ
 	}
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		EventHandler<MouseEvent> ok = new EventHandler<MouseEvent>() {
-			@Override
-		    public void handle(MouseEvent event) {
-		    	System.out.println("ok");
-			}
-		};
 	}
 
 }
